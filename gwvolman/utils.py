@@ -26,6 +26,7 @@ MOUNTS = {}
 RETRIES = 5
 container_name_pattern = re.compile('tmp\.([^.]+)\.(.+)\Z')
 
+
 PooledContainer = namedtuple('PooledContainer', ['id', 'path', 'host'])
 ContainerConfig = namedtuple('ContainerConfig', [
     'image', 'command', 'mem_limit', 'cpu_shares',
